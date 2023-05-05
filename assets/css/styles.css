@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Hanken Grotesk", "Arial Narow", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.wrapper {
+  /* align-items: center; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+.topcontainer {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* background-color: rgba(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
+  max-width: 100%;
+  min-width: 320px;
+  padding: 20px;
+}
+.topcontainer h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.4rem;
+}
+.score {
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 100%;
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin: 30px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
+  width: 50%;
+}
+.main-score {
+  color: white;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.over-score {
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+.topcontainer h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.description-score {
+  color: hsl(241, 100%, 89%);
+  padding: 10px 20px 30px 20px;
+  font-weight: 500;
+}
+.bottomcontainer {
+  text-align: left;
+  padding: 20px;
+}
+.bottomcontainer h2 {
+  font-size: 1.3rem;
+}
+.container-summary {
+  text-align: left;
+  padding: 10px;
+}
+/* Reaction====================================== */
+.Reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.115);
+  background-image: url(../images/icon-reaction.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Reaction h3 {
+  font-size: 1rem;
+  padding-left: 35px;
+}
+.main-score-reaction {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.over-score-reaction {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: bold;
+  padding-left: 8px;
+}
+/* Reaction====================================== */
+
+/* Memory====================================== */
+.Memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.115);
+  background-image: url(../images/icon-memory.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Memory h3 {
+  font-size: 1rem;
+  padding-left: 35px;
+}
+.score-memory {
+  display: flex;
+  padding-left: 125px;
+}
+.main-score-memory {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.over-score-memory {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: bold;
+  padding-left: 8px;
+}
+/* Memory====================================== */
+
+/* Verbal====================================== */
+.Verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.115);
+  background-image: url(../images/icon-verbal.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Verbal h3 {
+  font-size: 1rem;
+  padding-left: 40px;
+}
+.score-verbal {
+  display: flex;
+  padding-left: 125px;
+}
+.main-score-verbal {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.over-score-verbal {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: bold;
+  padding-left: 8px;
+}
+/* Verbal====================================== */
+
+/* Visual====================================== */
+.Visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.115);
+  background-image: url(../images/icon-verbal.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Visual h3 {
+  font-size: 1rem;
+  padding-left: 40px;
+}
+.score-visual {
+  display: flex;
+  padding-left: 145px;
+}
+.main-score-visual {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.over-score-visual {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: bold;
+  padding-left: 8px;
+}
+/* Visual====================================== */
+.continue {
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  color: hsl(221, 100%, 96%);
+  display: block;
+  font-weight: 700;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px;
+  width: 90%;
+}
+/* DESKTOP VIEW ============================================ */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+  .maincontainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* max-width: 1200px; */
+    height: 430px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 15px 55px rgb(230, 230, 230);
+  }
+  .topcontainer {
+    background: linear-gradient(
+      180deg,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+    border-radius: 30px;
+    /* background-color: rgba(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
+    max-width: 290px;
+    padding: 20px;
+  }
+  .topcontainer h1 {
+    padding-top: 10px;
+  }
+  .score {
+    background: linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    border-radius: 100%;
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin: 20px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
+    width: 50%;
+  }
+  .main-score {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .over-score {
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+  }
+  .description-score {
+    color: hsl(241, 100%, 89%);
+    padding: 40px;
+    font-size: 1.1rem;
+  }
+  .bottomcontainer {
+    padding: 20px;
+    text-align: left;
+    width: 290px;
+  }
+  .continue:hover {
+    background: linear-gradient(
+      180deg,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+  }
+}
